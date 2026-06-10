@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TaskFlow - Tu solución de gestión de tareas eficiente y fácil de usar. Organiza tus proyectos, asigna tareas y colabora con tu equipo en un solo lugar.">
+    <title>TaskFlow - Inicio</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div>
+            <form action="search" class="search-container">
+                <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="28"
+                height="28"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#607d8b"
+                stroke-width="1"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                >
+                    <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+                    <path d="M21 21l-6 -6" />
+                </svg>
+                <input type="text" placeholder="Search tasks, projects, or team members...">
+            </form>
+            
+        </div>
+        <div>
+            <div class="header-actions">
+                <button class="icon-button">Notifications</button>
+                <button class="icon-button">Messages</button>
+            </div>
+            <div class="user-profile">
+                <p >Username</p>
+                <p>Role</p>
+                <img src="" alt="User profile avatar" class="avatar">
+            </div>
+        </div>
+    </header>
+
+    <aside class="sidebar">
+        <div>
+            <h2>TaskFlow</h2>
+            <p>Enterprise Pro</p>
+        </div>
+        <button>
+            Add New Project
+        </button>
+        <nav>
+            <a href="">Dashboard</a>
+            <a href="">Kanban Board</a>
+            <a href="">Project Directory</a>
+            <a href="">My tasks</a>
+            <a href="">Reporting</a>
+         </nav>
+         <div>
+            <a href="">Settings</a>
+            <a href="">Support</a>
+         </div>  
+    </aside>
+
+    <main>
+         <section>
+            <header>
+                <h1>Welcome back, Username!</h1>
+                <p>You have NRO tasks due today across NRO active projects. Your current sprint performance is up by NRO% compared to last week.</p>
+                <button>
+                    View My Queue
+                </button>
+                <button>
+                    Sprint Report
+                </button>
+            </header>
+
+            <article>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-clipboard-text"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M9 5h-2a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-12a2 2 0 0 0 -2 -2h-2" /><path d="M9 5a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2" /><path d="M9 12h6" /><path d="M9 16h6" /></svg>
+                <h3>Total Tasks</h3>
+                <p>NRO</p>
+            </article>
+            
+            <article>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-bug"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M9 9v-1a3 3 0 0 1 6 0v1" /><path d="M8 9h8a6 6 0 0 1 1 3v3a5 5 0 0 1 -10 0v-3a6 6 0 0 1 1 -3" /><path d="M3 13l4 0" /><path d="M17 13l4 0" /><path d="M12 20l0 -6" /><path d="M4 19l3.35 -2" /><path d="M20 19l-3.35 -2" /><path d="M4 7l3.75 2.4" /><path d="M20 7l-3.75 2.4" /></svg>
+                <h3>Pending Bugs</h3>
+                <p>NRO</p>
+            </article>
+
+            <article>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-rocket"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M4 13a8 8 0 0 1 7 7a6 6 0 0 0 3 -5a9 9 0 0 0 6 -8a3 3 0 0 0 -3 -3a9 9 0 0 0 -8 6a6 6 0 0 0 -5 3" /><path d="M7 14a6 6 0 0 0 -3 6a6 6 0 0 0 6 -3" /><path d="M14 9a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /></svg>
+                <h3>In Progress</h3>
+                <p>NRO</p>
+            </article>
+         </section>
+         <section>
+            <div>
+                <h2>Recent Projects</h2>
+                <a href="">View all</a>
+                <article>
+                    <img src="" alt="Project thumbnail">
+                    <h3>Project Name</h3>
+                    <p>Project description goes here. This is a brief overview of the project objectives and key details.</p>
+                    <p>Progress</p>
+                    <p>NRO%</p>
+                    <progress value="NRO" max="100"></progress>
+                    <img src="" alt="Avatar of the project owner">
+                    <img src="" alt="avatar of a team member">
+                    <img src="" alt="avatar of a team member">
+                    <img src="" alt="+NRO more team members">
+                </article>
+                <article>
+                    <img src="" alt="Project thumbnail">
+                    <h3>Project Name</h3>
+                    <p>Project description goes here. This is a brief overview of the project objectives and key details.</p>
+                    <p>Progress</p>
+                    <p>NRO%</p>
+                    <progress value="NRO" max="100"></progress>
+                    <img src="" alt="Avatar of the project owner">
+                    <img src="" alt="avatar of a team member">
+                    <img src="" alt="avatar of a team member">
+                    <img src="" alt="+NRO more team members">
+                </article>
+            </div>
+            <div>
+                <h2>Due Soon</h2>
+                <article>
+                    <input type="checkbox" name="" id="">  
+                    <h3>Task Name</h3>
+                    <p>Due Date: NRO</p>
+                    <p>Project: Project Name</p>
+                    <p>Priority: NRO</p>
+                </article>
+                <article>
+                    <input type="checkbox" name="" id="">  
+                    <h3>Task Name</h3>
+                    <p>Due Date: NRO</p>
+                    <p>Project: Project Name</p>
+                    <p>Priority: NRO</p>
+                </article>
+                <article>
+                    <input type="checkbox" name="" id="">  
+                    <h3>Task Name</h3>
+                    <p>Due Date: NRO</p>
+                    <p>Project: Project Name</p>
+                    <p>Priority: NRO</p>
+                </article>
+                <article>
+                    <input type="checkbox" name="" id="">  
+                    <h3>Task Name</h3>
+                    <p>Due Date: NRO</p>
+                    <p>Project: Project Name</p>
+                    <p>Priority: NRO</p>
+                </article>
+                <button>See Full List</button>
+            </div>
+         </section>
+         <section>
+            <h2>Task Completion Trends</h2>
+            <p>Visualizing team throughput over the last 30 days.</p>
+            <select name="" id="">
+                <option value="30 days">30 days</option>
+                <option value="Last 3 months">Last 3 months</option>
+            </select>
+            Grafico de lineas con el numero de tareas completadas por dia en el ultimo mes, con una linea de tendencia que muestre si el rendimiento esta mejorando o empeorando.
+         </section>
+    </main>
+
+    <footer>
+        <small>&copy; 2026 TaskFlow. All rights reserved. By Mateo Matias</small>
+    </footer>
+</body>
+</html>
