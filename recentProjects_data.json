@@ -1,0 +1,68 @@
+{
+  "recentProjects": [
+    {
+      "id": 1,
+      "name": "E-Commerce Platform",
+      "description": "Building a scalable online shopping experience.",
+      "progress": 75,
+      "owner": "Olivia Brown",
+      "teamMembers": 8
+    },
+    {
+      "id": 2,
+      "name": "TaskFlow Mobile App",
+      "description": "Cross-platform mobile app for project management.",
+      "progress": 52,
+      "owner": "James Wilson",
+      "teamMembers": 6
+    },
+    {
+      "id": 3,
+      "name": "Analytics Dashboard",
+      "description": "Business intelligence and reporting platform.",
+      "progress": 88,
+      "owner": "Sophia Martinez",
+      "teamMembers": 5
+    },
+    {
+      "id": 4,
+      "name": "CRM Integration",
+      "description": "Connecting internal systems with customer data.",
+      "progress": 43,
+      "owner": "Daniel Lee",
+      "teamMembers": 4
+    },
+    {
+      "id": 5,
+      "name": "Cloud Migration",
+      "description": "Migrating infrastructure to cloud services.",
+      "progress": 67,
+      "owner": "Emma Taylor",
+      "teamMembers": 9
+    },
+    {
+      "id": 6,
+      "name": "HR Management System",
+      "description": "Centralized employee and payroll management.",
+      "progress": 91,
+      "owner": "Michael Johnson",
+      "teamMembers": 7
+    },
+    {
+      "id": 7,
+      "name": "Marketing Campaign Hub",
+      "description": "Planning and tracking digital marketing campaigns.",
+      "progress": 36,
+      "owner": "Isabella Garcia",
+      "teamMembers": 5
+    },
+    {
+      "id": 8,
+      "name": "AI Customer Support",
+      "description": "AI-powered chatbot for customer service automation.",
+      "progress": 59,
+      "owner": "William Anderson",
+      "teamMembers": 10
+    }
+  ]
+}
