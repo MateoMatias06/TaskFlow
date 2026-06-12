@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "name": "Fix login authentication bug",
+    "dueDate": "2026-06-13",
+    "project": "TaskFlow Mobile App",
+    "priority": "HIGH",
+    "completed": false
+  },
+  {
+    "id": 2,
+    "name": "Design user profile page",
+    "dueDate": "2026-06-14",
+    "project": "E-Commerce Platform",
+    "priority": "MED",
+    "completed": false
+  },
+  {
+    "id": 3,
+    "name": "Implement dashboard charts",
+    "dueDate": "2026-06-15",
+    "project": "Analytics Dashboard",
+    "priority": "HIGH",
+    "completed": false
+  },
+  {
+    "id": 4,
+    "name": "Optimize database queries",
+    "dueDate": "2026-06-16",
+    "project": "CRM Integration",
+    "priority": "LOW",
+    "completed": false
+  },
+  {
+    "id": 5,
+    "name": "Deploy staging environment",
+    "dueDate": "2026-06-17",
+    "project": "Cloud Migration",
+    "priority": "HIGH",
+    "completed": false
+  },
+  {
+    "id": 6,
+    "name": "Review payroll module",
+    "dueDate": "2026-06-18",
+    "project": "HR Management System",
+    "priority": "MED",
+    "completed": false
+  },
+  {
+    "id": 7,
+    "name": "Create campaign landing page",
+    "dueDate": "2026-06-19",
+    "project": "Marketing Campaign Hub",
+    "priority": "LOW",
+    "completed": false
+  },
+  {
+    "id": 8,
+    "name": "Train chatbot model",
+    "dueDate": "2026-06-20",
+    "project": "AI Customer Support",
+    "priority": "HIGH",
+    "completed": false
+  },
+  {
+    "id": 9,
+    "name": "Write API documentation",
+    "dueDate": "2026-06-21",
+    "project": "TaskFlow Mobile App",
+    "priority": "MED",
+    "completed": false
+  },
+  {
+    "id": 10,
+    "name": "Update security policies",
+    "dueDate": "2026-06-22",
+    "project": "Cloud Migration",
+    "priority": "LOW",
+    "completed": false
+  }
+]

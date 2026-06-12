@@ -10,6 +10,7 @@
     <title>TaskFlow - Inicio</title>
 
     <link rel="stylesheet" href="style.css" />
+    <script type="module" src="script.js" ></script>
   </head>
   <body>
     <div class="container">
@@ -189,121 +190,29 @@
             <div class="recent-projects">
                 <div class="title">
                 <h2>Recent Projects</h2>
-              <a href="">View all</a>
+                <button class="project-list">See Full List</button>
                </div>
             <div class="project-cards">
-              <article>
-                <img src="" alt="Project thumbnail" class="project-icon"/>
-                <h3>Project Name</h3>
-                <p>
-                  Project description goes here. This is a brief overview of the
-                  project objectives and key details.
-                </p>
-                <div class="progress-info">
-                <span>Progress</span>
-                <span>NRO%</span>
-                </div>
-                <progress value="NRO" max="100"></progress>
-                <div class="team-avatars">
-                <img src="" alt="Avatar of the project owner" />
-                <img src="" alt="avatar of a team member" />
-                <img src="" alt="avatar of a team member" />
-                <span>+NRO</span>
-                </div>
-              </article>
-              <article>
-                <img src="" alt="Project thumbnail" class="project-icon"/>
-                <h3>Project Name</h3>
-                <p>
-                  Project description goes here. This is a brief overview of the
-                  project objectives and key details.
-                </p>
-                <div class="progress-info">
-                  <span>Progress</span>
-                  <span>NRO%</span>
-                </div>
-                <progress value="NRO" max="100"></progress>
-                <div class="team-avatars">
-                <img src="" alt="Avatar of the project owner" />
-                <img src="" alt="avatar of a team member" />
-                <img src="" alt="avatar of a team member" />
-                <span>+NRO</span>
-                </div>
-              </article>
             </div>
             </div>
-            <div class="due-tasks">
+            <div class="due-tasks-container">
                 <div class="due-header">
               <h2>Due Soon</h2>
               <button><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-filter-2"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M4 6h16" /><path d="M6 12h12" /><path d="M9 18h6" /></svg></button>
             </div>
-              <article>
-                <div class="left">
-                    <input type="checkbox" name="" id="" />
-                </div>
-                <div class="middle">
-                <h3>Task Name</h3>
-                <p>Due Date: NRO</p>
-                <p>Project: Project Name</p>
-                </div>
-                <div class="right">
-                    <span class="priority high">NRO</span>
-                </div>
-                
-              </article>
-            <article>
-                <div class="left">
-                    <input type="checkbox" name="" id="" />
-                </div>
-                <div class="middle">
-                    <h3>Task Name</h3>
-                    <p>Due Date: NRO</p>
-                    <p>Project: Project Name</p>
-                </div>
-                <div class="right">
-                    <span class="priority medium">NRO</span>
-                </div>
-            
-            </article>
-            <article>
-                <div class="left">
-                    <input type="checkbox" name="" id="" />
-                </div>
-                <div class="middle">
-                    <h3>Task Name</h3>
-                    <p>Due Date: NRO</p>
-                    <p>Project: Project Name</p>
-                </div>
-                <div class="right">
-                    <span class="priority low">NRO</span>
-                </div>
-            
-            </article>
-            <article>
-                <div class="left">
-                    <input type="checkbox" name="" id="" />
-                </div>
-                <div class="middle">
-                    <h3>Task Name</h3>
-                    <p>Due Date: NRO</p>
-                    <p>Project: Project Name</p>
-                </div>
-                <div class="right">
-                    <span class="priority high">NRO</span>
-                </div>
-            
-            </article>
-            <button class="full-list">See Full List</button>
+              <div class="due-tasks">
+
+              </div>
             </div>
           </section>
           <section class="chart-section">
             <div class="chart-header">
             <div>
                 <h2>Task Completion Trends</h2>
-            <p>Visualizing team throughput over the last 30 days.</p>
+            <p>Visualizing team throughput over the <sapn class="chart-text">last 30 days.</span></p>
             </div>            
-            <select name="" id="">
-              <option value="30 days">30 days</option>
+            <select name="" id="select-chart">
+              <option value="Last 30 days">Last 30 days</option>
               <option value="Last 3 months">Last 3 months</option>
             </select>
             </div>

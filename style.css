@@ -307,18 +307,20 @@ main section:first-child header{
         font-weight:600;
         color: var(--text-primary);
     }
-    a{
+    button{
         font-size:0.875rem; 
         font-weight:600;
         color: var(--text-secondary);
         text-decoration:none;
+        border: none;
+        background: none;
     }
   }
   .project-cards{
     display:grid;
     grid-template-columns: repeat(2,1fr);
     gap:1.25rem;
-    article{
+    .project-desc{
         background-color: var(--background-color-container);
         padding:1.25rem;
         border-radius:0.625rem;
@@ -395,7 +397,7 @@ main section:first-child header{
     } 
   }
 }
-.due-tasks{
+.due-tasks-container{
   padding:1.25rem; 
   border-radius:0.625rem;
   display:flex;
@@ -421,7 +423,7 @@ main section:first-child header{
         font-weight: 600;
     }
   }
-  article{
+  .task-card{
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -468,12 +470,12 @@ main section:first-child header{
         color: #dc2626;
     }
     .medium{
-        background-color: #fef3c7; 
-        color: #d97706;
+        background-color: #f2f4f6; 
+        color: #b2b3b4;
     }
     .low{
-        background-color: #dbeafe; 
-        color: #2563eb;
+        background-color: #f2f4f6; 
+        color: #b2b3b4;
     }
   }
 }
