@@ -17,6 +17,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+html, body, #root{
+  width: 100%;
+  min-height: 100vh;
+}
 body{
     font-family: inter;
     background-color: var(--background-color);
@@ -24,10 +28,14 @@ body{
 }
 .container{
     display: flex;
-    min-height: 100vh;
 }
 aside{
-    width: 30rem; 
+    position: sticky;
+    top: 0;
+    align-self: flex-start;
+    overflow-y: auto;
+    height: 100vh;
+    width: 20rem; 
     background-color: var(--background-color-aside-primary);
     color: var(--text-secondary);
     display: flex;
@@ -121,7 +129,15 @@ aside{
 .content{
     flex: 1;
 }
-header{
+.main-content{
+  flex: 1;
+  overflow-y: auto;
+  height: 100vh;
+}
+.main-header{
+    position: sticky;
+    top: 0;
+    z-index: 100;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -290,6 +306,7 @@ main section:first-child header{
   display: grid;
   grid-template-columns: repeat(2,1fr);
   gap:1.25rem;
+  align-items: start;
 }
 .recent-projects{
     background-color: var(--background-color-primary);
@@ -397,6 +414,11 @@ main section:first-child header{
     } 
   }
 }
+.recent-projects, .due-tasks-container{
+      display: flex;
+      flex-direction: column;
+}
+
 .due-tasks-container{
   padding:1.25rem; 
   border-radius:0.625rem;
@@ -408,6 +430,7 @@ main section:first-child header{
     display:flex;
     justify-content:space-between;
     align-items:center;
+    margin-bottom: 1.25rem;
     h2{
         font-size:2rem; 
         font-weight:600;
@@ -429,7 +452,7 @@ main section:first-child header{
     flex-direction: column;
     border: 0.005rem solid var(--surface-dim);
     background-color: var(--background-color-container);
-    padding:1.25rem;
+    padding: 0.8rem 1rem;
     border-radius:0.625rem;
     display:grid;
     grid-template-columns: 0.625rem 1fr auto;
@@ -465,18 +488,22 @@ main section:first-child header{
         font-weight:600;
         justify-self: end;
     }
-    .high{
+    .HIGH{
         background-color: #fee2e2; 
         color: #dc2626;
     }
-    .medium{
+    .MEd{
         background-color: #f2f4f6; 
         color: #b2b3b4;
     }
-    .low{
+    .LOW{
         background-color: #f2f4f6; 
         color: #b2b3b4;
     }
+    
+  }
+  .showing-all{
+    padding: 1.4rem 1rem;
   }
 }
 .full-list{
@@ -532,4 +559,7 @@ main section:first-child header{
     }
   }
 
+}
+.due-tasks{
+  flex: 1;
 }
