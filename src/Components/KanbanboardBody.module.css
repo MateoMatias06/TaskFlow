@@ -1,0 +1,76 @@
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    width: 100%;
+    padding: 1.5rem;
+}
+.kanbanColumn{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 0.75rem;
+    background-color: var(--surface-container-low);
+}
+.columnHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid var(--surface-dim);
+}
+.columnHeader h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+.columnHeader svg {
+    cursor: pointer;
+    color: var(--text-secondary);
+    transition: .2s;
+}
+
+.columnHeader svg:hover {
+    color: var(--text-primary);
+}
+
+.columnContent {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.columnTitle{
+    display:flex;
+    align-items:center;
+    gap:.5rem;
+}
+
+.columnTitle h3{
+    font-size:1rem;
+    font-weight:600;
+}
+
+.todoStatus{
+    width:.6rem;
+    height:.6rem;
+    border-radius:50%;
+
+    background: var(--text-secondary);
+}
+.inProgressStatus{
+    width:.6rem;
+    height:.6rem;
+    border-radius:50%;
+
+    background: var(--inProgress);
+}
+.reviewStatus{
+    width:.6rem;
+    height:.6rem;
+    border-radius:50%;
+
+    background: var(--review);
+}

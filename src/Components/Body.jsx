@@ -1,15 +1,17 @@
 import { useState } from "react";
-import MetricCard from "./Components/MetricCard"
-import ProjectCard from "./Components/ProjectCard";
-import TaskCard from "./Components/TaskCard";
+import MetricCard from "./MetricCard"
+import ProjectCard from "./ProjectCard";
+import TaskCard from "./TaskCard";
 
-import RecentProjects from "./Data/recentProjects_data.json"
-import DueSoonTasks from "./Data/dueSoon_data.json"
+import RecentProjects from "../Data/recentProjects_data.json"
+import DueSoonTasks from "../Data/dueSoon_data.json"
+
 
 import {
   IconClipboardText,
   IconBug,
-  IconRocket
+  IconRocket,
+  IconFilter2
 } from "@tabler/icons-react";
 
 function Body(){
@@ -39,13 +41,16 @@ function Body(){
         <main>
           <section className="hero-section">
             <header>
-              <h1>Welcome back, Username!</h1>
+              <h1>Welcome back, Mateo!</h1>
               <p>
                 You have NRO tasks due today across NRO active projects. Your
                 current sprint performance is up by NRO% compared to last week.
               </p>
-              <button className="button-primary">View My Queue</button>
+              <div>
+                  <button className="button-primary">View My Queue</button>
               <button className="button-secondary">Sprint Report</button>
+              </div>
+              
             </header>
           </section>
           <section className="metrics-section">
@@ -72,7 +77,9 @@ function Body(){
             <div className="due-tasks-container">
                 <div className="due-header">
               <h2>Due Soon</h2>
-              <button><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="icon icon-tabler icons-tabler-outline icon-tabler-filter-2"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M4 6h16" /><path d="M6 12h12" /><path d="M9 18h6" /></svg></button>
+              <button>
+                <IconFilter2 />
+              </button>
             </div>
               <div className="due-tasks">
                 {visibleTasks.map(task => (
