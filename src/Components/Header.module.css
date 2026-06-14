@@ -1,0 +1,81 @@
+.mainHeader {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem;
+  background-color: var(--background-color-container);
+  border-bottom: 1px solid var(--surface-dim);
+}
+.searchContainer {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  background-color: var(--surface-container-low);
+  padding: 0.625rem;
+  border-radius: 0.5rem;
+  width: 37.5rem;
+}
+input {
+  border: none;
+  background: none;
+  outline: none;
+  width: 100%;
+}
+svg {
+  color: var(--text-secondary);
+}
+.headerActions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.iconButton {
+  width: 2.75rem;
+  height: 2.75rem;
+  border: none;
+  background-color: var(--surface-container);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 0.8rem;
+  transition: 0.2s;
+}
+.iconButton:hover {
+  background: var(--surface-container-low);
+}
+.iconButton svg {
+  color: var(--text-secondary);
+  flex-shrink: 0;
+}
+.userProfile {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.userInfo {
+  text-align: right;
+}
+h3 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+p {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+.avatar {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: var(--background-color-container);
+  object-fit: cover;
+}
+.headerRight {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
